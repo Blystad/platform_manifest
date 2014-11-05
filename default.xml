@@ -44,7 +44,7 @@
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/maguro" name="android_device_samsung_maguro" remote="freshgiammi" revision="aosp-5.0" />
-  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="freshgiammi" revision="aosp-5.0" />
+  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="freshgiammi" revision="master" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
