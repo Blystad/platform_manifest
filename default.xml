@@ -8,7 +8,7 @@
   <remote  name="freshgiammi"
            fetch="https://github.com/freshgiammi/" />
 
-  <default revision="refs/tags/android-5.0.0_r2"
+  <default revision="refs/tags/android-5.0.0_r6"
            remote="aosp"
            sync-j="4" />
 
@@ -43,8 +43,11 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
   <project path="device/sample" name="device/sample" groups="pdk" />
-  <project path="device/samsung/maguro" name="android_device_samsung_maguro" remote="freshgiammi" revision="aosp-5.0" />
-  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="freshgiammi" revision="master" />
+  <project path="device/samsung/maguro" name="android_device_samsung_maguro"
+remote="freshgiammi" revision="aosp-5.0" />
+  <project path="device/samsung/toro" name="android_device_samsung_toro"   remote="freshgiammi" revision="aosp-5.0" />
+  <project path="device/samsung/toroplus" name="android_device_samsung_toroplus" remote="freshgiammi" revision="aosp-5.0" />
+  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="freshgiammi" revision="aosp-5.0" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
@@ -66,7 +69,7 @@
   <project path="external/checkpolicy" name="platform/external/checkpolicy" groups="pdk" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" />
-  <project path="external/chromium_org" name="platform/external/chromium_org" />
+  <project path="external/chromium_org" name="android_external_chromium_org" remote="freshgiammi" revision="aosp-5.0" />
   <project path="external/chromium_org/sdch/open-vcdiff" name="platform/external/chromium_org/sdch/open-vcdiff" />
   <project path="external/chromium_org/testing/gtest" name="platform/external/chromium_org/testing/gtest" />
   <project path="external/chromium_org/third_party/WebKit" name="platform/external/chromium_org/third_party/WebKit" />
@@ -308,14 +311,14 @@
   <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
-  <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
+  <project path="hardware/invensense" name="android_hardware_invensense" remote="freshgiammi" revision="aosp-5.0" groups="invensense" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="freshgiammi" revision="aosp-5.0" groups="omap4" />
-  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="freshgiammi" revision="master" />
+  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="freshgiammi" revision="aosp-5.0" />
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" />
@@ -401,6 +404,7 @@
   <project path="prebuilts/devtools" name="platform/prebuilts/devtools" />
   <project path="prebuilts/eclipse" name="platform/prebuilts/eclipse" groups="pdk" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" revision="refs/tags/android-4.4.4_r2" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" />
@@ -423,6 +427,6 @@
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="tools" />
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" />
-  <project path="vendor/fml" name="android_vendor_fresh" remote="freshgiammi" revision="aosp-5.0" />
-  <project path="vendor/samsung" name="android_vendor_samsung" remote="freshgiammi" revision="aosp-5.0" />
+  <project path="vendor/fml" name="android_vendor_fml" remote="freshgiammi" revision="aosp-5.0" />
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="freshgiammi" revision="aosp-5.0" />
 </manifest>
